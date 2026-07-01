@@ -1,6 +1,4 @@
-# eco-forecast-ekk
-
-**EKK Tabanlı Ekonometrik Yaklaşımla Finansal Değişkenlerin Tahmini**
+# EKK Tabanlı Ekonometrik Yaklaşımla Finansal Değişkenlerin Tahmini
 
 Türkiye ekonomisine ilişkin açık kaynaklı verilerle çalışan, kayan pencere (rolling window) yaklaşımıyla güncellenen Otoregresif (AR) modelleri En Küçük Kareler (EKK) yöntemiyle tahmin eden ve sonuçları interaktif bir web arayüzü üzerinden sunan uçtan uca bir ekonomik tahmin sistemidir.
 
