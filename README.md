@@ -139,7 +139,9 @@ Burada $L$ maksimum olabilirlik değerini, $k$ parametre sayısını ve $n$ göz
 
 Sistem, tek yönlü bir bağımlılık zinciriyle bağlı altı katmandan oluşur. Her katman tek bir sorumluluğa sahiptir ve yalnızca kendisinden önceki katmanlara bağımlıdır.
 
-![Sistem Mimarisi](docs/architecture.svg)
+<p align="center">
+  <img src="docs/architecture.svg" alt="eco-forecast-ekk sistem mimarisi" width="680">
+</p>
 
 | Katman | Dosya | Sorumluluk |
 |---|---|---|
