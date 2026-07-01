@@ -8,7 +8,7 @@
     </marker>
   </defs>
 
-  <rect width="680" height="320" fill="#17181C"/>
+  <!-- Arka plan kasıtlı olarak şeffaf bırakıldı; host sayfanın zeminiyle kaynaşır -->
 
   <!-- Bağlantı okları -->
   <line x1="220" y1="88"  x2="248" y2="88"  stroke="#9C9A92" stroke-width="1" marker-end="url(#arrow)"/>
