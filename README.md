@@ -249,6 +249,10 @@ shiny::runApp("app/app.R")
 
 Arayüz üzerinden gösterge seçimi ve pencere uzunluğu parametreleri interaktif olarak değiştirilebilir; grafik, performans metrikleri ve tahmin tablosu seçime bağlı olarak otomatik güncellenir.
 
+<p align="center">
+  <img src="docs/forecast_example.svg" alt="Örnek tahmin grafiği: gerçek ve tahmin" width="680">
+</p>
+
 ---
 
 ## 7. Yapılandırma
