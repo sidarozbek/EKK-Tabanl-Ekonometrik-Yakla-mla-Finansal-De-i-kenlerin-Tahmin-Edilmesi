@@ -139,11 +139,7 @@ Burada $L$ maksimum olabilirlik değerini, $k$ parametre sayısını ve $n$ göz
 
 Sistem, tek yönlü bir bağımlılık zinciriyle bağlı altı katmandan oluşur. Her katman tek bir sorumluluğa sahiptir ve yalnızca kendisinden önceki katmanlara bağımlıdır.
 
-```
-config.R  →  utils.R  →  api_functions.R  →  data.prep.R  →  models.R  →  app/app.R
-Ayarlar      Yardımcı     Veri Erişim         Veri            Tahmin       Kullanıcı
-             Fonksiyonlar  Katmanı            Hazırlama       Katmanı      Arayüzü
-```
+![Sistem Mimarisi](docs/architecture.svg)
 
 | Katman | Dosya | Sorumluluk |
 |---|---|---|
