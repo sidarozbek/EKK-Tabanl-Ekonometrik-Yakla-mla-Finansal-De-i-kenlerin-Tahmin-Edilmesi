@@ -2,50 +2,50 @@
   <title>Örnek tahmin grafiği: gerçek ve tahmin</title>
   <desc>Temsili bir zaman serisinde gerçek değer ile bir adım ilerisi tahminin karşılaştırılması. Tahmin dördüncü dönemden başlar, çünkü AR(3) modeli üç geçmiş gözleme ihtiyaç duyar. On beşinci dönemde ani bir sıçrama olur ve tahmin bu sıçramayı bir dönem geriden takip eder.</desc>
 
-  <rect x="70" y="12" width="180" height="52" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)" stroke-width="0.5"/>
-  <text x="84" y="30" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">MAE</text>
-  <text x="84" y="52" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">0.25</text>
-  <rect x="270" y="12" width="180" height="52" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)" stroke-width="0.5"/>
-  <text x="284" y="30" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">RMSE</text>
-  <text x="284" y="52" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">0.63</text>
-  <rect x="470" y="12" width="180" height="52" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)" stroke-width="0.5"/>
-  <text x="484" y="30" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">MAPE</text>
-  <text x="484" y="52" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF">%0.6</text>
+  <rect x="70" y="12" width="180" height="52" rx="8" fill="rgba(0,0,0,0.08)" stroke="rgba(0,0,0,0.25)" stroke-width="0.5"/>
+  <text x="84" y="30" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">MAE</text>
+  <text x="84" y="52" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#000000">0.25</text>
+  <rect x="270" y="12" width="180" height="52" rx="8" fill="rgba(0,0,0,0.08)" stroke="rgba(0,0,0,0.25)" stroke-width="0.5"/>
+  <text x="284" y="30" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">RMSE</text>
+  <text x="284" y="52" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#000000">0.63</text>
+  <rect x="470" y="12" width="180" height="52" rx="8" fill="rgba(0,0,0,0.08)" stroke="rgba(0,0,0,0.25)" stroke-width="0.5"/>
+  <text x="484" y="30" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">MAPE</text>
+  <text x="484" y="52" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#000000">%0.6</text>
 
   <!-- Yatay ızgara -->
-  <line x1="70" y1="332.3" x2="650" y2="332.3" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
-  <text x="60" y="336.3" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">38</text>
-  <line x1="70" y1="293.5" x2="650" y2="293.5" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
-  <text x="60" y="297.5" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">39</text>
-  <line x1="70" y1="254.8" x2="650" y2="254.8" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
-  <text x="60" y="258.8" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">40</text>
-  <line x1="70" y1="216.1" x2="650" y2="216.1" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
-  <text x="60" y="220.1" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">41</text>
-  <line x1="70" y1="177.4" x2="650" y2="177.4" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
-  <text x="60" y="181.4" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">42</text>
-  <line x1="70" y1="138.7" x2="650" y2="138.7" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
-  <text x="60" y="142.7" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">43</text>
-  <line x1="70" y1="100.0" x2="650" y2="100.0" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
-  <text x="60" y="104.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">44</text>
+  <line x1="70" y1="332.3" x2="650" y2="332.3" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+  <text x="60" y="336.3" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">38</text>
+  <line x1="70" y1="293.5" x2="650" y2="293.5" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+  <text x="60" y="297.5" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">39</text>
+  <line x1="70" y1="254.8" x2="650" y2="254.8" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+  <text x="60" y="258.8" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">40</text>
+  <line x1="70" y1="216.1" x2="650" y2="216.1" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+  <text x="60" y="220.1" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">41</text>
+  <line x1="70" y1="177.4" x2="650" y2="177.4" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+  <text x="60" y="181.4" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">42</text>
+  <line x1="70" y1="138.7" x2="650" y2="138.7" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+  <text x="60" y="142.7" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">43</text>
+  <line x1="70" y1="100.0" x2="650" y2="100.0" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+  <text x="60" y="104.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">44</text>
 
   <!-- X ekseni -->
-  <text x="70.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">1</text>
-  <text x="130.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">4</text>
-  <text x="210.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">8</text>
-  <text x="290.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">12</text>
-  <text x="370.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">16</text>
-  <text x="450.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">20</text>
-  <text x="530.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">24</text>
-  <text x="610.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">28</text>
+  <text x="70.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">1</text>
+  <text x="130.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">4</text>
+  <text x="210.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">8</text>
+  <text x="290.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">12</text>
+  <text x="370.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">16</text>
+  <text x="450.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">20</text>
+  <text x="530.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">24</text>
+  <text x="610.0" y="362" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="rgba(0,0,0,0.6)">28</text>
 
   <!-- Tahminin başladığı sınır -->
-  <line x1="120.0" y1="100" x2="120.0" y2="340" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="3 3"/>
-  <text x="130.0" y="111" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#FFFFFF">Tahmin Burada Başlar</text>
+  <line x1="120.0" y1="100" x2="120.0" y2="340" stroke="rgba(0,0,0,0.35)" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="130.0" y="111" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#000000">Tahmin Burada Başlar</text>
 
   <!-- İlk tahmine bağlanan önceki 3 gözlem -->
-  <line x1="110.0" y1="305.5" x2="130.0" y2="309.0" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
-  <line x1="90.0" y1="315.2" x2="130.0" y2="309.0" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
-  <line x1="70.0" y1="324.5" x2="130.0" y2="309.0" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="110.0" y1="305.5" x2="130.0" y2="309.0" stroke="rgba(0,0,0,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="90.0" y1="315.2" x2="130.0" y2="309.0" stroke="rgba(0,0,0,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="70.0" y1="324.5" x2="130.0" y2="309.0" stroke="rgba(0,0,0,0.35)" stroke-width="1" stroke-dasharray="2 2"/>
 
   <!-- Ani sıçrama işareti -->
   <line x1="370.0" y1="155.0" x2="370.0" y2="275.0" stroke="#E24B4A" stroke-width="1.25" stroke-dasharray="2 2"/>
@@ -117,7 +117,7 @@
 
   <!-- Açıklama -->
   <circle cx="76" cy="400" r="4" fill="#7F77DD"/>
-  <text x="86" y="404" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Gerçek</text>
+  <text x="86" y="404" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#000000">Gerçek</text>
   <circle cx="166" cy="400" r="4" fill="none" stroke="#D85A30" stroke-width="2"/>
-  <text x="176" y="404" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#FFFFFF">Tahmin</text>
+  <text x="176" y="404" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#000000">Tahmin</text>
 </svg>
