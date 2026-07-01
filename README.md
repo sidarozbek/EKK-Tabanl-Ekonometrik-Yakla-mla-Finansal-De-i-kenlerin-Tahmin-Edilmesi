@@ -1,3 +1,5 @@
+# eco-forecast-ekk
+
 **EKK Tabanlı Ekonometrik Yaklaşımla Finansal Değişkenlerin Tahmini**
 
 Türkiye ekonomisine ilişkin açık kaynaklı verilerle çalışan, kayan pencere (rolling window) yaklaşımıyla güncellenen Otoregresif (AR) modelleri En Küçük Kareler (EKK) yöntemiyle tahmin eden ve sonuçları interaktif bir web arayüzü üzerinden sunan uçtan uca bir ekonomik tahmin sistemidir.
@@ -69,36 +71,65 @@ $$
 \varepsilon_t \sim N(0, \sigma^2)
 $$
 
+Burada $y_t$ t anındaki gösterge değerini, $c$ sabit terimi, $\varphi_1, \dots, \varphi_p$ otoregresif katsayıları, $y_{t-k}$ k dönem önceki gecikmeli değeri ve $\varepsilon_t$ hata terimini (beyaz gürültü) ifade eder.
+
 ### 2.2. En Küçük Kareler (EKK) Tahmincisi
 
 Model parametreleri, hata kareler toplamını minimize eden EKK yöntemiyle tahmin edilir:
 
-```
-β̂ = (X'X)⁻¹X'Y
-```
+$$
+\hat{\beta} = (X^\top X)^{-1} X^\top Y
+$$
+
+Burada $\hat{\beta}$ parametre vektörünün EKK tahminini, $X$ tasarım (regresör) matrisini, $X^\top$ bu matrisin transpozunu ve $Y$ bağımlı değişken vektörünü temsil eder.
 
 Gauss-Markov teoremi altında EKK tahmincisi, doğru model varsayımları koşuluyla En İyi Doğrusal Tarafsız Tahmin Edici (BLUE) özelliğini taşır.
 
 ### 2.3. Kayan Pencere Yaklaşımı
 
-Her tahmin anı *t* için yalnızca `[t-w, t]` aralığındaki gözlemler kullanılarak model yeniden tahmin edilir ve **görülmemiş** *t+1* dönemi öngörülür. Ardından pencere bir adım kaydırılır ve süreç tekrarlanır:
+Her tahmin anı $t$ için yalnızca $[t-w,\ t]$ aralığındaki gözlemler kullanılarak model yeniden tahmin edilir ve **görülmemiş** $t+1$ dönemi öngörülür. Ardından pencere bir adım kaydırılır ve süreç tekrarlanır:
 
-```
-t anında:      D_t = {y_{t-w}, ..., y_t}  →  β̂_t = (X_t'X_t)⁻¹X_t'Y_t  →  ŷ_{t+1|t}
-t+1 anında:    D_{t+1} = {y_{t-w+1}, ..., y_{t+1}}  →  β̂_{t+1}  →  ŷ_{t+2|t+1}
-```
+$$
+t \text{ anında:} \quad D_t = \{y_{t-w}, \dots, y_t\} \;\rightarrow\; \hat{\beta}_t = (X_t^\top X_t)^{-1} X_t^\top Y_t \;\rightarrow\; \hat{y}_{t+1|t}
+$$
+
+$$
+t+1 \text{ anında:} \quad D_{t+1} = \{y_{t-w+1}, \dots, y_{t+1}\} \;\rightarrow\; \hat{\beta}_{t+1} \;\rightarrow\; \hat{y}_{t+2|t+1}
+$$
 
 Bu yapı, örnek dışı testin metodolojik bütünlüğünü garanti eder: tahmin edilen dönem, tanımı gereği hiçbir zaman eğitim kümesine dahil edilmez. Pencere uzunluğu (varsayılan: 48 ay) yapılandırma dosyasından ayarlanabilir; literatürde tipik aralık 36-60 aydır (Pesaran & Timmermann, 2007; Rossi & Inoue, 2012).
 
 ### 2.4. Performans Metrikleri
 
-| Metrik | Tanım | Kullanım Amacı |
-|---|---|---|
-| **MAE** | Ortalama Mutlak Hata | Ölçek bağımlı, yorumlanması doğrudan |
-| **RMSE** | Kök Ortalama Kare Hata | Büyük sapmaları orantısız biçimde cezalandırır |
-| **MAPE** | Ortalama Mutlak Yüzde Hata | Farklı ölçekteki göstergeler arasında karşılaştırılabilirlik sağlar |
+$$
+\text{MAE} = \frac{1}{n} \sum_{t=1}^{n} \left| y_t - \hat{y}_t \right|
+$$
 
-Optimal gecikme uzunluğu (p), AIC ve BIC bilgi kriterleri esas alınarak belirlenir.
+$$
+\text{RMSE} = \sqrt{\frac{1}{n} \sum_{t=1}^{n} \left( y_t - \hat{y}_t \right)^2}
+$$
+
+$$
+\text{MAPE} = \frac{100}{n} \sum_{t=1}^{n} \left| \frac{y_t - \hat{y}_t}{y_t} \right|
+$$
+
+| Metrik | Kullanım Amacı |
+|---|---|
+| **MAE** | Ölçek bağımlı, yorumlanması doğrudan |
+| **RMSE** | Büyük sapmaları orantısız biçimde cezalandırır |
+| **MAPE** | Farklı ölçekteki göstergeler arasında karşılaştırılabilirlik sağlar |
+
+Optimal gecikme uzunluğu $p$, aşağıdaki bilgi kriterleri esas alınarak belirlenir; en düşük değeri veren model seçilir:
+
+$$
+\text{AIC} = -2\ln(L) + 2k
+$$
+
+$$
+\text{BIC} = -2\ln(L) + k \ln(n)
+$$
+
+Burada $L$ maksimum olabilirlik değerini, $k$ parametre sayısını ve $n$ gözlem sayısını ifade eder.
 
 ---
 
@@ -324,7 +355,7 @@ Bu proje açık kaynak kodlu olarak yayımlanması planlanmaktadır. Lisans tür
 
 ---
 
-## 14. Kaynakça
+## 12. Kaynakça
 
 - Pesaran, M. H., & Timmermann, A. (2007). *Selection of estimation window in the presence of breaks.* Journal of Econometrics.
 - Rossi, B., & Inoue, A. (2012). *Out-of-sample forecast tests robust to the choice of window size.* Journal of Business & Economic Statistics.
