@@ -61,7 +61,6 @@ Yeni gösterge tanımlamak, yapılandırma dosyasına tek bir kayıt eklemekten 
 
 p'inci dereceden bir otoregresif süreç şu şekilde tanımlanır:
 
-```r
 $$
 y_t = c + \varphi_1 y_{t-1} + \varphi_2 y_{t-2} + \dots + \varphi_p y_{t-p} + \varepsilon_t
 $$
@@ -69,7 +68,6 @@ $$
 $$
 \varepsilon_t \sim N(0, \sigma^2)
 $$
-```
 
 ### 2.2. En Küçük Kareler (EKK) Tahmincisi
 
