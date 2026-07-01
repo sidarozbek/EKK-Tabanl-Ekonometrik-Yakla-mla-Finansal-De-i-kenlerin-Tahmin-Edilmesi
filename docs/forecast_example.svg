@@ -2,45 +2,35 @@
   <title>Örnek tahmin grafiği: gerçek ve tahmin</title>
   <desc>Temsili bir zaman serisinde gerçek değer ile bir adım ilerisi tahminin karşılaştırılması. Tahmin dördüncü dönemden başlar, çünkü AR(3) modeli üç geçmiş gözleme ihtiyaç duyar. On beşinci dönemde ani bir sıçrama olur ve tahmin bu sıçramayı bir dönem geriden takip eder.</desc>
   <style>
-    text { font-family: Helvetica, Arial, sans-serif; }
-    .val { fill: #1a1a1a; }
-    .muted { fill: rgba(0,0,0,0.62); }
-    .grid { stroke: rgba(0,0,0,0.18); }
-    .line-soft { stroke: rgba(0,0,0,0.38); }
-    .kpi-box { fill: rgba(0,0,0,0.05); stroke: rgba(0,0,0,0.22); }
-    @media (prefers-color-scheme: dark) {
-      .val { fill: #F5F5F0; }
-      .muted { fill: rgba(255,255,255,0.62); }
-      .grid { stroke: rgba(255,255,255,0.18); }
-      .line-soft { stroke: rgba(255,255,255,0.38); }
-      .kpi-box { fill: rgba(255,255,255,0.06); stroke: rgba(255,255,255,0.22); }
-    }
+    text { font-family: Helvetica, Arial, sans-serif; paint-order: stroke; stroke: #ffffff; stroke-width: 3px; stroke-linejoin: round; }
+    .val { fill: #141414; }
+    .muted { fill: #3a3a3a; stroke-width: 2.5px; }
   </style>
 
-  <rect class="kpi-box" x="70" y="12" width="180" height="52" rx="8" stroke-width="0.5"/>
+  <rect x="70" y="12" width="180" height="52" rx="8" fill="rgba(136,136,136,0.12)" stroke="rgba(136,136,136,0.4)" stroke-width="0.5"/>
   <text class="muted" x="84" y="30" font-size="11">MAE</text>
   <text class="val" x="84" y="52" font-size="20" font-weight="500">0.25</text>
-  <rect class="kpi-box" x="270" y="12" width="180" height="52" rx="8" stroke-width="0.5"/>
+  <rect x="270" y="12" width="180" height="52" rx="8" fill="rgba(136,136,136,0.12)" stroke="rgba(136,136,136,0.4)" stroke-width="0.5"/>
   <text class="muted" x="284" y="30" font-size="11">RMSE</text>
   <text class="val" x="284" y="52" font-size="20" font-weight="500">0.63</text>
-  <rect class="kpi-box" x="470" y="12" width="180" height="52" rx="8" stroke-width="0.5"/>
+  <rect x="470" y="12" width="180" height="52" rx="8" fill="rgba(136,136,136,0.12)" stroke="rgba(136,136,136,0.4)" stroke-width="0.5"/>
   <text class="muted" x="484" y="30" font-size="11">MAPE</text>
   <text class="val" x="484" y="52" font-size="20" font-weight="500">%0.6</text>
 
   <!-- Yatay ızgara -->
-  <line class="grid" x1="70" y1="332.3" x2="650" y2="332.3" stroke-width="0.5"/>
+  <line x1="70" y1="332.3" x2="650" y2="332.3" stroke="rgba(136,136,136,0.45)" stroke-width="0.5"/>
   <text class="muted" x="60" y="336.3" text-anchor="end" font-size="11">38</text>
-  <line class="grid" x1="70" y1="293.5" x2="650" y2="293.5" stroke-width="0.5"/>
+  <line x1="70" y1="293.5" x2="650" y2="293.5" stroke="rgba(136,136,136,0.45)" stroke-width="0.5"/>
   <text class="muted" x="60" y="297.5" text-anchor="end" font-size="11">39</text>
-  <line class="grid" x1="70" y1="254.8" x2="650" y2="254.8" stroke-width="0.5"/>
+  <line x1="70" y1="254.8" x2="650" y2="254.8" stroke="rgba(136,136,136,0.45)" stroke-width="0.5"/>
   <text class="muted" x="60" y="258.8" text-anchor="end" font-size="11">40</text>
-  <line class="grid" x1="70" y1="216.1" x2="650" y2="216.1" stroke-width="0.5"/>
+  <line x1="70" y1="216.1" x2="650" y2="216.1" stroke="rgba(136,136,136,0.45)" stroke-width="0.5"/>
   <text class="muted" x="60" y="220.1" text-anchor="end" font-size="11">41</text>
-  <line class="grid" x1="70" y1="177.4" x2="650" y2="177.4" stroke-width="0.5"/>
+  <line x1="70" y1="177.4" x2="650" y2="177.4" stroke="rgba(136,136,136,0.45)" stroke-width="0.5"/>
   <text class="muted" x="60" y="181.4" text-anchor="end" font-size="11">42</text>
-  <line class="grid" x1="70" y1="138.7" x2="650" y2="138.7" stroke-width="0.5"/>
+  <line x1="70" y1="138.7" x2="650" y2="138.7" stroke="rgba(136,136,136,0.45)" stroke-width="0.5"/>
   <text class="muted" x="60" y="142.7" text-anchor="end" font-size="11">43</text>
-  <line class="grid" x1="70" y1="100.0" x2="650" y2="100.0" stroke-width="0.5"/>
+  <line x1="70" y1="100.0" x2="650" y2="100.0" stroke="rgba(136,136,136,0.45)" stroke-width="0.5"/>
   <text class="muted" x="60" y="104.0" text-anchor="end" font-size="11">44</text>
 
   <!-- X ekseni -->
@@ -54,18 +44,18 @@
   <text class="muted" x="610.0" y="362" text-anchor="middle" font-size="11">28</text>
 
   <!-- Tahminin başladığı sınır -->
-  <line class="line-soft" x1="120.0" y1="100" x2="120.0" y2="340" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="120.0" y1="100" x2="120.0" y2="340" stroke="rgba(120,120,120,0.55)" stroke-width="1" stroke-dasharray="3 3"/>
   <text class="val" x="130.0" y="111" font-size="11" font-weight="500">Tahmin Burada Başlar</text>
 
   <!-- İlk tahmine bağlanan önceki 3 gözlem -->
-  <line class="line-soft" x1="110.0" y1="305.5" x2="130.0" y2="309.0" stroke-width="1" stroke-dasharray="2 2"/>
-  <line class="line-soft" x1="90.0" y1="315.2" x2="130.0" y2="309.0" stroke-width="1" stroke-dasharray="2 2"/>
-  <line class="line-soft" x1="70.0" y1="324.5" x2="130.0" y2="309.0" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="110.0" y1="305.5" x2="130.0" y2="309.0" stroke="rgba(120,120,120,0.55)" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="90.0" y1="315.2" x2="130.0" y2="309.0" stroke="rgba(120,120,120,0.55)" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="70.0" y1="324.5" x2="130.0" y2="309.0" stroke="rgba(120,120,120,0.55)" stroke-width="1" stroke-dasharray="2 2"/>
 
   <!-- Ani sıçrama işareti -->
   <line x1="370.0" y1="155.0" x2="370.0" y2="275.0" stroke="#E24B4A" stroke-width="1.25" stroke-dasharray="2 2"/>
   <circle cx="370.0" cy="155.0" r="4" fill="#E24B4A"/>
-  <text x="360.0" y="139.0" text-anchor="end" font-size="11" font-weight="500" fill="#E24B4A">Ani Sıçrama</text>
+  <text x="360.0" y="139.0" text-anchor="end" font-size="11" font-weight="500" fill="#E24B4A" stroke="#ffffff" stroke-width="3px" paint-order="stroke">Ani Sıçrama</text>
 
   <!-- Gerçek: dolu çizgi ve dolu noktalar -->
   <path d="M70.0,324.5 L90.0,315.2 L110.0,305.5 L130.0,307.5 L150.0,305.2 L170.0,295.9 L190.0,297.0 L210.0,295.1 L230.0,291.2 L250.0,285.8 L270.0,285.4 L290.0,286.6 L310.0,276.9 L330.0,274.6 L350.0,275.0 L370.0,155.0 L390.0,154.2 L410.0,155.7 L430.0,148.8 L450.0,147.6 L470.0,146.5 L490.0,148.8 L510.0,139.9 L530.0,140.3 L550.0,131.7 L570.0,129.0 L590.0,129.4 L610.0,124.8 L630.0,122.8 L650.0,116.3" fill="none" stroke="#7F77DD" stroke-width="2"/>
