@@ -91,6 +91,10 @@ Gauss-Markov teoremi altında EKK tahmincisi, doğru model varsayımları koşul
 
 Her tahmin anı $t$ için yalnızca $[t-w,\ t]$ aralığındaki gözlemler kullanılarak model yeniden tahmin edilir ve **görülmemiş** $t+1$ dönemi öngörülür. Ardından pencere bir adım kaydırılır ve süreç tekrarlanır:
 
+<p align="center">
+  <img src="docs/rolling_window.svg" alt="Kayan pencere yaklaşımı illüstrasyonu" width="680">
+</p>
+
 $$
 t \text{ anında:} \quad D_t = \{y_{t-w}, \dots, y_t\} \;\rightarrow\; \hat{\beta}_t = (X_t^\top X_t)^{-1} X_t^\top Y_t \;\rightarrow\; \hat{y}_{t+1|t}
 $$
