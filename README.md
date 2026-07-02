@@ -1,7 +1,6 @@
 # EKK Tabanlı Ekonometrik Yaklaşımla Finansal Değişkenlerin Tahmini
 ![R](https://img.shields.io/badge/R-4.3%2B-blue)
 ![Shiny](https://img.shields.io/badge/Shiny-App-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
 Türkiye ekonomisine ilişkin açık kaynaklı verilerle çalışan, kayan pencere (rolling window) yaklaşımıyla güncellenen Otoregresif (AR) modelleri En Küçük Kareler (EKK) yöntemiyle tahmin eden ve sonuçları interaktif bir web arayüzü üzerinden sunan uçtan uca bir ekonomik tahmin sistemidir.
@@ -22,8 +21,7 @@ Bu proje, TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Deste
 8. [Modül Referansı](#8-modül-referansı)
 9. [Genişletilebilirlik](#9-genişletilebilirlik)
 10. [Tasarım İlkeleri](#10-tasarım-i̇lkeleri)
-11. [Lisans](#13-lisans)
-12. [Kaynakça](#14-kaynakça)
+11. [Kaynakça](#12-kaynakça)
 
 ---
 
@@ -197,9 +195,11 @@ eco-forecast-ekk/
 ### 5.2. Depoyu Klonlama
 
 ```bash
-git clone https://github.com/<kullanici-adi>/eco-forecast-ekk.git
+git clone https://github.com/kullanici-adiniz/eco-forecast-ekk.git
 cd eco-forecast-ekk
 ```
+
+> Yukarıdaki `kullanici-adiniz` kısmını kendi GitHub kullanıcı adınızla değiştirin.
 
 ### 5.3. Bağımlılıkların Kurulumu
 
@@ -357,13 +357,7 @@ Her durumda değişiklik, ilgili katmanla sınırlı kalır; diğer katmanlar ye
 
 ---
 
-## 11. Lisans
-
-Bu proje açık kaynak kodlu olarak yayımlanması planlanmaktadır. Lisans türü belirlenme aşamasındadır (örn. MIT).
-
----
-
-## 12. Kaynakça
+## 11. Kaynakça
 
 - Pesaran, M. H., & Timmermann, A. (2007). *Selection of estimation window in the presence of breaks.* Journal of Econometrics.
 - Rossi, B., & Inoue, A. (2012). *Out-of-sample forecast tests robust to the choice of window size.* Journal of Business & Economic Statistics.
