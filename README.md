@@ -21,8 +21,7 @@ Bu proje, TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Deste
 8. [Modül Referansı](#8-modül-referansı)
 9. [Genişletilebilirlik](#9-genişletilebilirlik)
 10. [Tasarım İlkeleri](#10-tasarım-i̇lkeleri)
-11. [Lisans](#11-lisans)
-12. [Kaynakça](#12-kaynakça)
+11. [Kaynakça](#12-kaynakça)
 
 ---
 
@@ -358,13 +357,7 @@ Her durumda değişiklik, ilgili katmanla sınırlı kalır; diğer katmanlar ye
 
 ---
 
-## 11. Lisans
-
-Bu proje [MIT Lisansı](LICENSE) altında yayımlanmaktadır.
-
----
-
-## 12. Kaynakça
+## 11. Kaynakça
 
 - Pesaran, M. H., & Timmermann, A. (2007). *Selection of estimation window in the presence of breaks.* Journal of Econometrics.
 - Rossi, B., & Inoue, A. (2012). *Out-of-sample forecast tests robust to the choice of window size.* Journal of Business & Economic Statistics.
