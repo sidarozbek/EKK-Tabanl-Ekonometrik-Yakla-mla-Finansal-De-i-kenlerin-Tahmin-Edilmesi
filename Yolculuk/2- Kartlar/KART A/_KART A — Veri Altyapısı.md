@@ -1,5 +1,3 @@
-# KART A — Veri Altyapısı (Sade Anlatım)
-
 > **Bu kart serinin 1. parçasıdır.** Seri üç karttan oluşur ve hepsi **tek bir mini-projeye** hizmet eder: kendi kendine çalışan bir tahmin sistemi.
 > 
 > Bu kartta R'ı hiç bilmiyor olabilirsin — sorun değil. Her adım tek bir şey yapacak, hiçbir adımda birden fazla yeni kavramla aynı anda karşılaşmayacaksın.
