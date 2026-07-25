@@ -1,4 +1,4 @@
-##Kavramsal Temellerden Uygulamaya##
+## Kavramsal Temellerden Uygulamaya ##
 
 ### Rastgele Değişken Kavramı
 
