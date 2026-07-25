@@ -109,7 +109,14 @@ EKK (En Küçük Kareler / OLS) tahmincileri:
 \[
 \hat{\beta}_1
 =
-\frac{Cov(X,Y)}{Var(X)}
+\frac{\operatorname{Cov}(X,Y)}
+{\operatorname{Var}(X)}
+\]
+
+\[
+\hat{\beta}_1
+=
+\frac{S_{XY}}{S_X^2}
 \]
 
 $$
