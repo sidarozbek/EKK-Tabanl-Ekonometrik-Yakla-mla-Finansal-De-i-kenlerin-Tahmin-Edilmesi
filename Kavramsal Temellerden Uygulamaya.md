@@ -26,21 +26,21 @@ $$
 
 **Doğrusallık özelliği**, AR modelinin matematiksel iskeletini kurmamızı sağlayan en kritik özelliktir:
 
-```
+$$
 E[aX + bY + c] = aE[X] + bE[Y] + c
-```
+$$
 
 Bu özellik, X ve Y'nin **bağımsız olup olmadığına bakmaksızın** geçerlidir. AR(1) modelinde:
 
-```
-Yₜ = c + φ₁Yₜ₋₁ + εₜ
-```
+$$
+Y_t = c + \phi_1 Y_{t-1} + \varepsilon_t
+$$
 
 modelinin her iki tarafının beklenen değerini alırken doğrusallığı kullanırız:
 
-```
-E[Yₜ] = c + φ₁E[Yₜ₋₁] + E[εₜ]
-```
+$$
+E[Y_t] = c + \phi_1 E[Y_{t-1}] + E[\varepsilon_t]
+$$
 
 ### Varyans
 
