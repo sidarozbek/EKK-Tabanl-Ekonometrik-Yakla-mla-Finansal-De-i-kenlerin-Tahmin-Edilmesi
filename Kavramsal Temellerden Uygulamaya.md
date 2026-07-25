@@ -224,7 +224,7 @@ $$
 
 Bu model artık **çoklu doğrusal regresyon** yapısındadır — açıklayıcı değişkenler $Y_{t-1}, Y_{t-2}, \ldots, Y_{t-p}$'dir.
 
-### 2.4 Ortalamanın Türetilmesi $\mu=\frac{c}{1-\phi_1}$
+### Ortalamanın Türetilmesi $\mu=\frac{c}{1-\phi_1}$
 
 AR(1) sürecinin durağan (stationary) olduğunu varsayalım; yani $E[Y_t] = E[Y_{t-1}] = \mu$ (zamana bağlı olmayan sabit bir ortalama).
 
@@ -440,7 +440,7 @@ $$
 Bu, "kayan (rolling)" pencere olarak adlandırılır çünkü pencere **sabit genişlikte** kalır, sadece konumu kayar.
 Her pencerede yeniden tahmin edilen $\hat{\beta}_t$, o zaman dilimine **özgü** katsayıları temsil eder ve böylece modelin zamanla değişen dinamiklere uyum sağlamasına (adaptivity) imkan tanır.
 
-### 5.3 Örnek Dışı Tahminin Metodolojik Önemi
+### Örnek Dışı Tahminin Metodolojik Önemi
 
 Kayan pencere yaklaşımının asıl gücü, **örnek dışı (out-of-sample) tahmin** üretmeye doğal olarak uygun olmasıdır:
 
@@ -459,7 +459,7 @@ $$
 
 4. Pencere kaydırılır, süreç tekrarlanır.
 
-### 5.4 Pencere Uzunluğunun Seçimi
+### Pencere Uzunluğunun Seçimi
 
 Pencere uzunluğu $w$'nin seçimi, kendi başına bir denge (trade-off) problemidir:
 
@@ -497,7 +497,7 @@ $$
 - Bu nedenle RMSE, **büyük/nadir hatalardan kaçınmanın kritik olduğu** uygulamalarda tercih edilir.
 - Aykırı değerlere karşı **MAE'den daha hassastır** — bu bazen istenen bir özellik (büyük hataları öne çıkarmak), bazen bir dezavantajdır (tek bir aşırı gözlem metriği domine edebilir).
 
-### 6.3 MAPE (Mean Absolute Percentage Error / Ortalama Mutlak Yüzde Hata)
+### MAPE (Mean Absolute Percentage Error / Ortalama Mutlak Yüzde Hata)
 
 $$
 MAPE = \frac{1}{n_{test}} \sum \left| \frac{Y_t - \hat{Y}_t}{Y_t} \right| \times 100
@@ -509,7 +509,7 @@ $$
   - $Y_t = 0$ (veya sıfıra çok yakın) olduğunda tanımsız veya aşırı büyük değerler üretir — payda sıfıra yaklaştıkça patlar.
   - Negatif değerler içeren serilerde yorumlanması problemlidir.
 
-### 6.4 Metriklerin Karşılaştırılması ve Birlikte Kullanımı
+### Metriklerin Karşılaştırılması ve Birlikte Kullanımı
 
 | Metrik | Birim | Büyük hatalara duyarlılık | Ölçekler arası karşılaştırma | Sıfıra yakın değerlerde |
 |---|---|---|---|---|
