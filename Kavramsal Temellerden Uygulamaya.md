@@ -46,9 +46,7 @@ $$
 
 Varyans, bir rastgele değişkenin ortalaması etrafındaki yayılımını ölçer:
 
-```
-Var(X) = E[(X − E[X])²] = E[X²] − (E[X])²
-```
+$Var(X) = E[(X - E[X])^2] = E[X^2] - (E[X])^2$
 
 Doğrusal dönüşümler altında:
 
