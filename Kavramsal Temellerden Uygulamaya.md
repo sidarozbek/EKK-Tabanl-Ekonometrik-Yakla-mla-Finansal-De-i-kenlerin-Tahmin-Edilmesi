@@ -105,8 +105,8 @@ $$
 \frac{\sum_{i=1}^{n}(X_i-\bar{X})(Y_i-\bar{Y})}
 {\sum_{i=1}^{n}(X_i-\bar{X})^2}
 \quad
-\frac{\operatorname{Cov}(X,Y)}
-{\operatorname{Var}(X)}
+\frac{Cov(X,Y)}
+{Var(X)}
 $$
 
 $$
@@ -398,9 +398,9 @@ Model derecesi seçim prosedürü:
 4. **Karar kuralı: $AIC(p)$ veya $BIC(p)$ değerini minimize eden $p$ seçilir.**
 
 $$
-p^*=\underset{p}{\operatorname{argmin}}\,AIC(p)
+p^*=\underset{p}{\arg\min}\,AIC(p)
 \qquad \text{veya} \qquad
-p^*=\underset{p}{\operatorname{argmin}}\,BIC(p)
+p^*=\underset{p}{\arg\min}\,BIC(p)
 $$
 
 ## Kayan Pencere Yaklaşımı
