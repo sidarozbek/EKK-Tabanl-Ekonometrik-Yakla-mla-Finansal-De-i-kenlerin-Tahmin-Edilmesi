@@ -13,13 +13,15 @@ Zaman serisi analizinde her bir gözlem $(Y_t)$, zamanın belirli bir noktasınd
 
 **Beklenen değer**, bir rastgele değişkenin olasılık ağırlıklı ortalamasıdır:
 
-\[
-E[X] = \sum_i x_i P(x_i) \qquad \text{(kesikli)}
-\]
+$$
+E[X] = \sum_{i} x_i P(x_i)
+\qquad \text{(kesikli)}
+$$
 
-\[
-E[X] = \int_{-\infty}^{\infty} x f(x)\,dx \qquad \text{(sürekli)}
-\]
+$$
+E[X] = \int_{-\infty}^{\infty} x\,f(x)\,dx
+\qquad \text{(sürekli)}
+$$
 
 
 **Doğrusallık özelliği**, AR modelinin matematiksel iskeletini kurmamızı sağlayan en kritik özelliktir:
