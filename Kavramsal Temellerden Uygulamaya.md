@@ -398,9 +398,9 @@ Model derecesi seçim prosedürü:
 4. **Karar kuralı: $AIC(p)$ veya $BIC(p)$ değerini minimize eden $p$ seçilir.**
 
 $$
-p^{*}=\underset{p}{\arg\min}\,AIC(p)
+p^{\ast}=\underset{p}{\arg\min}\,AIC(p)
 \qquad \text{veya} \qquad
-p^{*}=\underset{p}{\arg\min}\,BIC(p)
+p^{\ast}=\underset{p}{\arg\min}\,BIC(p)
 $$
 
 ## Kayan Pencere Yaklaşımı
