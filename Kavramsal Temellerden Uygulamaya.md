@@ -27,7 +27,9 @@ $$
 E[aX + bY + c] = aE[X] + bE[Y] + c
 $$
 
-Bu özellik, X ve Y'nin **bağımsız olup olmadığına bakmaksızın** geçerlidir. AR(1) modelinde:
+Bu özellik, X ve Y'nin **bağımsız olup olmadığına bakmaksızın** geçerlidir. 
+
+AR(1) modelinde:
 
 $$
 Y_t = c + \phi_1 Y_{t-1} + \varepsilon_t
@@ -59,7 +61,9 @@ $$
 Var(X+Y)=Var(X)+Var(Y) \qquad \text{(yalnızca } Cov(X,Y)=0 \text{ ise)}
 $$
 
-AR modelinde hata teriminin varyansı $\sigma^2$, sürecin ne kadar "gürültülü" olduğunu; $Y_t$'nin varyansı ise sürecin toplam belirsizliğini gösterir. AR(1) için durağanlık altında:
+AR modelinde hata teriminin varyansı $\sigma^2$, sürecin ne kadar "gürültülü" olduğunu; $Y_t$'nin varyansı ise sürecin toplam belirsizliğini gösterir. 
+
+AR(1) için durağanlık altında:
 
 $$
 Var(Y_t)=\frac{\sigma^2}{1-\phi_1^2}
@@ -95,13 +99,18 @@ $$
 
 EKK (En Küçük Kareler / OLS) tahmincileri:
 
-$$
-\hat{\beta}_1=
-\frac{\sum (X_i-\bar{X})(Y_i-\bar{Y})}
-{\sum (X_i-\bar{X})^2}
+\[
+\hat{\beta}_1
+=
+\frac{\sum_{i=1}^{n}(X_i-\bar{X})(Y_i-\bar{Y})}
+{\sum_{i=1}^{n}(X_i-\bar{X})^2}
+\]
+
+\[
+\hat{\beta}_1
 =
 \frac{Cov(X,Y)}{Var(X)}
-$$
+\]
 
 $$
 \hat{\beta}_0=\bar{Y}-\hat{\beta}_1\bar{X}
@@ -176,7 +185,9 @@ Bu model yapısı, basit doğrusal regresyon modeline benzer bir yapıya sahipti
 
 ### Gecikme Kavramının Netleştirilmesi
 
-**Gecikme (lag)**, bir serinin geçmiş bir zaman noktasındaki değerini ifade eder. **Gecikme operatörü (Lag/Backshift operator) L** şu şekilde tanımlanır:
+**Gecikme (lag)**, bir serinin geçmiş bir zaman noktasındaki değerini ifade eder. 
+
+**Gecikme operatörü (Lag/Backshift operator) L** şu şekilde tanımlanır:
 
 $$
 LY_t = Y_{t-1}
@@ -200,7 +211,7 @@ $$
 (1 - \phi_1 L)Y_t = c + \varepsilon_t
 $$
 
-### 2.3 Genel Model: p'inci Dereceden AR(p)
+### Genel Model: p'inci Dereceden AR(p)
 
 AR(1)'in doğal genellemesi, birden fazla geçmiş değerin modele dahil edilmesidir:
 
@@ -216,7 +227,7 @@ $$
 
 Bu model artık **çoklu doğrusal regresyon** yapısındadır — açıklayıcı değişkenler $Y_{t-1}, Y_{t-2}, \ldots, Y_{t-p}$'dir.
 
-### 2.4 Ortalamanın Türetilmesi ($\mu = c/(1-\phi_1)$)
+### 2.4 Ortalamanın Türetilmesi $\mu=\frac{c}{1-\phi_1}$
 
 AR(1) sürecinin durağan (stationary) olduğunu varsayalım; yani $E[Y_t] = E[Y_{t-1}] = \mu$ (zamana bağlı olmayan sabit bir ortalama).
 
@@ -294,7 +305,7 @@ $\beta$'nın **doğrusal ve yansız tahmincileri arasında en küçük varyansa 
 
 > **AR modeline özgü uyarı**: Klasik Gauss-Markov teoremi, X'in **sabit (deterministic)** olduğunu varsayar. AR modelinde X, geçmiş Y değerlerinden oluştuğu için **stokastiktir**. Bu durumda BLUE özelliği tam anlamıyla geçerli olmasa da, $\varepsilon_t$'nin geçmiş $Y_{t-k}$ değerlerinden bağımsız olması (dışsallık varsayımı) koşuluyla EKK tahmincisi **tutarlı (consistent)** ve **asimptotik olarak yansız** kalır — büyük örneklemlerde benzer güvenilirlik sağlar.
 
-## 4. Model Derecesinin (p) Belirlenmesi
+## Model Derecesinin (p) Belirlenmesi
 
 ### Az/Çok Gecikme Sorunu
 
@@ -380,7 +391,7 @@ $$
 
 Bu yüzden **BIC, büyük örneklemlerde AIC'den daha "cimri" (parsimonious)** modeller seçme eğilimindedir — yani daha düşük p tercih eder. AIC ise göreceli olarak daha karmaşık (yüksek p) modellere daha toleranslıdır ve **tahmin (forecasting) performansı** açısından genelde tercih edilir; BIC ise **doğru modeli bulma (model seçim tutarlılığı)** açısından asimptotik olarak daha güçlü bir teorik özelliğe (consistency) sahiptir.
 
-### 4.4 Karar Kuralı
+### Karar Kuralı
 
 Model derecesi seçim prosedürü:
 
@@ -390,12 +401,14 @@ Model derecesi seçim prosedürü:
 4. **Karar kuralı: $AIC(p)$ veya $BIC(p)$ değerini minimize eden $p$ seçilir.**
 
 $$
-p^* = \underset{p}{\operatorname{argmin}}\ AIC(p) \qquad \text{veya} \qquad p^* = \underset{p}{\operatorname{argmin}}\ BIC(p)
+p^*=\underset{p}{\operatorname{argmin}}\,AIC(p)
+\qquad \text{veya} \qquad
+p^*=\underset{p}{\operatorname{argmin}}\,BIC(p)
 $$
 
-## 5. Kayan Pencere Yaklaşımı
+## Kayan Pencere Yaklaşımı
 
-### 5.1 Sabit Modelin Yetersizliği
+### Sabit Modelin Yetersizliği
 
 $$
 \hat{\beta} = (X^TX)^{-1}X^TY
@@ -411,7 +424,7 @@ Gerçek dünya verilerinde bu varsayım sıklıkla ihlal edilir:
 
 Tüm örneklemle tahmin edilen **sabit (tek) bir model**, bu değişimleri ortalayarak "yumuşatır" — bu da hem yakın geçmişteki dinamikleri tam yansıtamaz hem de gelecek tahminlerinde sistematik hatalara yol açar. Çözüm, modeli **belirli bir zaman penceresi içindeki veriyle tekrar tekrar tahmin etmektir** — bu da bizi kayan pencere (rolling window) yaklaşımına götürür.
 
-### 5.2 Pencere Mekanizmasının İşleyişi
+### Pencere Mekanizmasının İşleyişi
 
 Kayan pencere yaklaşımında, sabit uzunlukta bir **pencere (window)**, w gözlem içerecek şekilde tanımlanır. Model, bu pencere içindeki veriyle tahmin edilir; sonra pencere bir adım ileri kaydırılır (en eski gözlem düşürülür, en yeni gözlem eklenir) ve model **yeniden tahmin edilir**.
 
