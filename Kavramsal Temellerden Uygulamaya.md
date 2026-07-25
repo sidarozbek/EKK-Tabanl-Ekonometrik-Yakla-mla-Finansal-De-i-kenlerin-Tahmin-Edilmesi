@@ -99,25 +99,19 @@ $$
 
 EKK (En Küçük Kareler / OLS) tahmincileri:
 
-\[
+$$
 \hat{\beta}_1
 =
 \frac{\sum_{i=1}^{n}(X_i-\bar{X})(Y_i-\bar{Y})}
 {\sum_{i=1}^{n}(X_i-\bar{X})^2}
-\]
+$$
 
-\[
+$$
 \hat{\beta}_1
 =
 \frac{\operatorname{Cov}(X,Y)}
 {\operatorname{Var}(X)}
-\]
-
-\[
-\hat{\beta}_1
-=
-\frac{S_{XY}}{S_X^2}
-\]
+$$
 
 $$
 \hat{\beta}_0=\bar{Y}-\hat{\beta}_1\bar{X}
