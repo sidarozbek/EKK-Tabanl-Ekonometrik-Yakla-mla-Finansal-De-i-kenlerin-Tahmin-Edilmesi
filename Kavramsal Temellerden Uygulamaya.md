@@ -7,7 +7,7 @@ Bir **rastgele değişken (RV)**, bir deneyin olası sonuçlarına sayısal değ
 - **Kesikli RV**: Örnek — bir zar atışının sonucu (1,2,...,6)
 - **Sürekli RV**: Örnek — bir hisse senedinin günlük getirisi
 
-Zaman serisi analizinde her bir gözlem (Y_t), zamanın belirli bir noktasında ortaya çıkan **ayrı bir rastgele değişken** olarak kabul edilir. Bu nedenle bir zaman serisi ({Y_1, Y_2, ..., Y_t}), rastgele değişkenlerin oluşturduğu bir dizi, yani bir **stokastik süreç** olarak tanımlanır.
+Zaman serisi analizinde her bir gözlem $(Y_t)$, zamanın belirli bir noktasında ortaya çıkan \textbf{ayrı bir rastgele değişken} olarak kabul edilir. Bu nedenle bir zaman serisi $(\{Y_1, Y_2, \ldots, Y_t\})$, rastgele değişkenlerin oluşturduğu bir dizi, yani bir \textbf{stokastik süreç} olarak tanımlanır.
 
 ### Beklenen Değer ve Doğrusallık Özelliği
 
